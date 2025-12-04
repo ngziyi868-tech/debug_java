@@ -1,0 +1,36 @@
+p {
+  font-size: 50px; /* Console warning: Invalid property value */
+ /* the value of the font-size property is spelled incorectly and it is not the right way to change the font size. Since the font size is supposed to be large I decided to use 50px */
+}
+
+h1 {
+  font-size: 23xp;
+  /* The property font size needs an em dash in the middle. I fixed this by adding an em dash in the middle*/
+  color: purple;
+}
+
+.container {
+  color: red;
+  width: 500px;
+  height: 500px;
+  /* background should be the same as #output */
+  /* the misspelling of the selector, container, it's first property color and not choosing an actual color for the value of the property background color is causing 
+  the code to error. I'm going to fix the spelling and choose a color for the background to fix the problem.*/
+  background-color: #f3f3f3;
+}
+
+#output {
+  color: #000;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px;
+  /*the property padding is mispelled. I fixed the spelling */
+  border: 1px solid #000;
+  background-color: #f0f0f0;
+}
+
+.red {
+    color: red;
+}

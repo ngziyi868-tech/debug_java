@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Incorrect: Incorrect file path -->
+<link rel="stylesheet" href="styles.css">
+<!-- Console error: Failed to load resource: net::ERR_FILE_NOT_FOUND -->
+<!--Does not have a closing tag and is not opening the styles file. I am going to resolve
+    this issue by using the correct name to open the styles file. -->
+
+    <title>Debugging 101</title>
+  </head>
+  <body>
+
+
+<!-- Look at the name of this class, is it in the CSS File? -->
+    <div class="container">
+      <h1>Welcome to Debugging 101!</h1>
+     Let's learn how to debug our code.</p>
+    </div>
+
+
+    <input type="text" id="output" placeholder="This is an output"/>
+
+<!-- Incorrect: missing closing </div> tag -->
+<div>
+  <p>This is a paragraph inside a div.</p>
+<!-- Console warning: Unclosed tag -->
+<!--The error is that the p element has no closing tag so I will be adding it -->
+
+<!-- Incorrect: style attribute missing quotation marks -->
+<p class="red">This text is red.</p>
+<!-- Console error: Invalid or unexpected token -->
+<!--Was using style inside the html file when it can be done with CSS. I created a class name for the p
+element and I changed it's text color to red-->
+
+<!-- the div tag did not have a closing div tag so I added one to fix it. -->
+<!-- React-specific issue with incorrect attribute name -->
+<div class="container">Hello World</div>
+<!-- Console error in React: Unknown DOM property "classnme" -->
+<!-- The div tag class attribute was mispelled so I fixed the error by adding the missing 'a'->
+
+<!-- Incorrect: Loading HTTP resource on an HTTPS page -->
+<!-- update this image to http://placehold.co/400x400 -->
+<img src="http://placehold.co/400x400" alt="Example Image"/>
+<!-- Console error: Mixed Content: The page was loaded over HTTPS, but requested an insecure image -->
+<!-- the image tag needs it's closing tag and the image url has to be updated. I fixed this by implementing the instructed image and adding the closing tag. -->
+
+
+    <!-- include the JS file in the src string below this line -->
+    <script src="index.js"></script>
+    <!-- In the src attribute the JS file is supposed to be linked in it's place is an empty value. I fixed this by adding it in the src string -->
+  </body>
+</div>
+</html>
